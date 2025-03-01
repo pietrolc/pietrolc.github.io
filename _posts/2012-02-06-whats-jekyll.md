@@ -1,8 +1,8 @@
 ---
 layout: post
 title: What's Jekyll?
-category: example
-tags: [hyde]
+category: [example]
+tags: [jekyll]
 author: pietrolc
 ---
 
