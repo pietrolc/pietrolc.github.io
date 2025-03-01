@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's Jekyll?
-category: exmaple
+category: example
 tags: [hyde]
 author: pietrolc
 ---
