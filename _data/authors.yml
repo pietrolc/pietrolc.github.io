@@ -12,11 +12,11 @@ pietrolc:
     
   # This photo will be used in the about section
   picture:
-    path:            https://pietrolc.github.io/watercolors/assets/img/pietro_128.jpg
+    path:            https://pietrolc.github.io/assets/img/pietro_128.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://pietrolc.github.io/watercolors/assets/img/pietro_128.jpg
-      2x:            https://pietrolc.github.io/watercolors/assets/img/pietro_256.jpg
+      1x:            https://pietrolc.github.io/assets/img/pietro_128.jpg
+      2x:            https://pietrolc.github.io/assets/img/pietro_256.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
@@ -60,7 +60,7 @@ pietrolc:
     # stumbleupon:     _username_
     # paypal:          _username_
     # email:           mailto:f.klampfer@gmail.com
-    rss:               https://pietrolc.github.io/watercolors/feed.xml
+    rss:               https://pietrolc.github.io/feed.xml
 
 # Another author
 # mdo:
