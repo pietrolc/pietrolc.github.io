@@ -33,6 +33,9 @@ github_username:  jekyll
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
 
 # Exclude from processing.
 # The following items will not be processed, by default.
