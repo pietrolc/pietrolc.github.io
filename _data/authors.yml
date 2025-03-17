@@ -1,0 +1,5 @@
+authors:
+  pietrolc:  # Key matching the author name in your posts
+    name: "Pietro Luigi Carotenuto"  # Full name
+    bio: "Software engineer and watercolor enthusiast."
+    url: https://www.pietrolc.com  # Optional
