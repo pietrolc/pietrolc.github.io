@@ -1,0 +1,84 @@
+<style>
+.share-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(249, 249, 249, 0.9);
+  padding: 10px 15px;
+  text-align: center;
+  z-index: 1000;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.share-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.share-buttons li {
+  display: inline-block;
+}
+
+.share-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  text-decoration: none;
+  color: #333; /* Adjust text color */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.share-buttons a:hover {
+  opacity: 0.8;
+}
+
+.share-buttons img {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+}
+
+.share-text {
+  display: none; /* Initially hide the text */
+  font-size: 0.9em; /* Adjust font size */
+}
+
+.share-buttons a:hover .share-text {
+  display: inline; /* Show text on hover */
+}
+</style>
+<div class="share-box">
+  <ul class="share-buttons">
+    <li>
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}&via=YOUR_TWITTER_HANDLE" target="_blank" rel="noopener noreferrer" title="Share on Twitter">
+        <img src="/assets/share/twitter-icon.png" alt="Twitter" width="32" height="32">
+        <span class="share-text">Share via Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer" title="Share on Facebook">
+        <img src="/assets/share/facebook-icon.png" alt="Facebook" width="32" height="32">
+        <span class="share-text">Share via Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}&summary={{ page.excerpt | strip_html | url_encode }}&source={{ site.title | url_encode }}" target="_blank" rel="noopener noreferrer" title="Share on LinkedIn">
+        <img src="/assets/share/linkedin-icon.png" alt="LinkedIn" width="32" height="32">
+        <span class="share-text">Share via LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:?subject={{ page.title | url_encode }}&body=Check out this article: {{ page.url | absolute_url }}" title="Share via Email">
+        <img src="/assets/share/email-icon.png" alt="Email" width="32" height="32">
+        <span class="share-text">Share via Email</span>
+      </a>
+    </li>
+  </ul>
+</div>
