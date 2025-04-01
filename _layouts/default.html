@@ -39,6 +39,11 @@
         </ul>
         {% endif %}
 
+		<div id="search-container">
+		<input type="text" id="search-input" placeholder="Search...">
+		<ul id="search-results"></ul>
+		</div>
+
         <h3>Navigation</h3>
         <ul>
           {% for category in site.categories %}
@@ -64,5 +69,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+	<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
   </body>
 </html>
