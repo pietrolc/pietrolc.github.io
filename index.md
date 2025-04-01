@@ -78,3 +78,5 @@ title: Home
 </section>
 
 {% include mailchimp_form.html %}
+
+{% include share_box.html %}
