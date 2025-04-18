@@ -84,16 +84,16 @@ My algorithm takes no more than 200ms for the small pizza challenge (including s
 
 The maximum scores for these two input files are 15 and 42 respectively.
 
-[![Google Hashcode - Example - 3 slices]({{ '/wp-content/uploads/2019/12/example_pizza_3_slices.png' | relative_url }})]({{ '/wp-content/uploads/2019/12/example_pizza_3_slices.png' | relative_url }})
+[![Google Hashcode - Example - 3 slices]({{ '/wp-content/uploads/2019/12/example_pizza_3_slices.png.webp' | relative_url }})]({{ '/wp-content/uploads/2019/12/example_pizza_3_slices.png.webp' | relative_url }})
 The solution for the given example.
 
-[![Google Hashcode small pizza - 11 slices]({{ '/wp-content/uploads/2019/12/small_pizza_11_slices.png' | relative_url }})]({{ '/wp-content/uploads/2019/12/small_pizza_11_slices.png' | relative_url }})
+[![Google Hashcode small pizza - 11 slices]({{ '/wp-content/uploads/2019/12/small_pizza_11_slices.png.webp' | relative_url }})]({{ '/wp-content/uploads/2019/12/small_pizza_11_slices.png.webp' | relative_url }})
 Small pizza (11 slices, score is 42)
 
-[![Google Hashcode small pizza - 13 slices]({{ '/wp-content/uploads/2019/12/small_pizza_13_slices.png' | relative_url }})]({{ '/wp-content/uploads/2019/12/small_pizza_13_slices.png' | relative_url }})
+[![Google Hashcode small pizza - 13 slices]({{ '/wp-content/uploads/2019/12/small_pizza_13_slices.png.webp' | relative_url }})]({{ '/wp-content/uploads/2019/12/small_pizza_13_slices.png.webp' | relative_url }})
 Small pizza (13 slices, score is 42 )
 
-[![Google Hashcode small pizza - 14 slices]({{ '/wp-content/uploads/2019/12/small_pizza_14_slices.png' | relative_url }})]({{ '/wp-content/uploads/2019/12/small_pizza_14_slices.png' | relative_url }})
+[![Google Hashcode small pizza - 14 slices]({{ '/wp-content/uploads/2019/12/small_pizza_14_slices.png.webp' | relative_url }})]({{ '/wp-content/uploads/2019/12/small_pizza_14_slices.png.webp' | relative_url }})
 Small pizza: (14 slices, score is 42 )
 
 These solutions might be calculated almost instantly every time and almost independently of the configuration parameters used for my algorithm.
