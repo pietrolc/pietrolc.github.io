@@ -29,7 +29,7 @@ title: My C++ coding challenges to boost your skills!
 name: PietroLC.com
 description: 'Coding challenges for C++ Software Developers'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pietrolc-github-io.pages.dev/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pietrolc-github-io.pages.dev" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
 twitter_username: pietrolcdotcom
 github_username:  pietrolc
