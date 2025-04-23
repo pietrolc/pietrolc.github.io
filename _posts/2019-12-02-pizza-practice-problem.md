@@ -5,6 +5,7 @@ date: '2019-12-02T07:00:00+01:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'Solved the pizza practice problem to get ready for the Google Hashcode qualification process.'
 layout: post
+image: /wp-content/uploads/2019/12/google-hashcode-pizza-problem-768x576.jpg.webp
 guid: 'https://www.pietrolc.com/?p=2209'
 permalink: /pizza-practice-problem/
 rank_math_primary_category:
