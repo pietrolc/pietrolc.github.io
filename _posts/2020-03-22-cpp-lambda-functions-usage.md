@@ -57,14 +57,7 @@ image:
     - '/wp-content/uploads/2020/03/C-Lamba-functions-post.png.webp'
 ---
 
-![C++ Lambda functions can be used to do potentially whatever is needed.]({{ '/wp-content/uploads/2020/03/C-Lambda-functions-do-whatever-you-want-1024x341.png' | absolute_url }})
-
-## Table Of Contents
-1. [C++ Lambda Functions Usage](#c-lambda-functions-usage)
-    - [1) Initialize a class member variable](#1-initialize-a-class-member-variable)
-    - [2) Call a member function of class 2 from inside the member function of the class 1](#2-call-a-member-function-of-class-2-from-inside-the-member-function-of-the-class-1)
-    - [3) Define custom tasks](#3-define-custom-tasks)
-    - [Final thoughts](#final-thoughts)
+![C++ Lambda functions can be used to do potentially whatever is needed.]({{ '/wp-content/uploads/2020/03/C-Lambda-functions-do-whatever-you-want.png.webp' | absolute_url }})
 
 ## C++ Lambda Functions Usage
 
