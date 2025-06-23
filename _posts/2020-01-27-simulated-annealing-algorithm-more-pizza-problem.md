@@ -182,7 +182,7 @@ If you have the perfect algorithm, but the data are incorrectly read from file o
 
 Please, find my algorithm flowchart below:
 
-![Simulated Annealing Flowchart]({{ '/wp-content/uploads/2024/05/simulated-annealing-flowchart.png' | absolute_url }})
+![Simulated Annealing Flowchart]({{ '/wp-content/uploads/2024/05/simulated-annealing-flowchart.png.webp' | absolute_url }})
 
 In Literature, you can find many articles about this topic. In this article, my goal is to show how I used the chosen algorithm and – above all – provide suggestions to pass the Qualification Round.
 
