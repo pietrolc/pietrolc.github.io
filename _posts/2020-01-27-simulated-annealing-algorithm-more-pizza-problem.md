@@ -68,6 +68,8 @@ categories:
 tags:
     - Algorithms
     - 'Google hashcode'
+image:
+    - '/wp-content/uploads/2020/02/google-hashcode-more-pizza-algorithm-description.jpg.webp'
 ---
 
 ## The “More Pizza” Problem

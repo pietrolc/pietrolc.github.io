@@ -61,6 +61,8 @@ categories:
     - 'Problem-Solving Tournaments'
 tags:
     - 'Google hashcode'
+image:
+    - '/wp-content/uploads/2020/01/solved_more_pizza_problem_google_hashcode1.png.webp'
 ---
 
 This year, the Google Hash Code team has proposed a different version of the Pizza practice problem. For this reason, it has been entitled “More Pizza”.
