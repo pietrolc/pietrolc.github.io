@@ -20,7 +20,7 @@ rank_math_primary_category:
 um_content_restriction:
     - 'a:8:{s:26:"_um_custom_access_settings";b:0;s:14:"_um_accessible";i:0;s:28:"_um_access_hide_from_queries";b:0;s:19:"_um_noaccess_action";i:0;s:30:"_um_restrict_by_custom_message";i:0;s:27:"_um_restrict_custom_message";s:0:"";s:19:"_um_access_redirect";i:0;s:23:"_um_access_redirect_url";s:0:"";}'
 categories:
-    - News
+    - 'News'
 tags:
     - 'TIOBE Index'
 ---
@@ -71,5 +71,5 @@ By continuously learning and adapting, young programmers can position themselves
 
 1.  [7 New trends developed in C++ – CXO Today](https://cxotoday.com/specials/7-new-trends-developed-in-c/)
 2.  [C++ still shining in language popularity index – InfoWorld](https://www.infoworld.com/article/2337948/c-still-shining-in-language-popularity-index.html)
-3.  [Trends for C++ | Programming Languages | Technologies](https://stacktrends.dev/technologies/programming-languages/cplusplus/)
+3.  [Trends for C++ \| Programming Languages \| Technologies](https://stacktrends.dev/technologies/programming-languages/cplusplus/)
 4.  [C++ still worth learning in 2024 ? : r/cpp – Reddit](https://www.reddit.com/r/cpp/comments/190otqu/c_still_worth_learning_in_2024/)
