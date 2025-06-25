@@ -50,23 +50,15 @@ First, we need to verify that this is *your* issue as well.
 
 That’s pretty simple.
 
-- If you restart your Ubuntu VM, keep pressing *MAIUSC* or *SHIFT* key in order to enter into the boot menu.
+- If you restart your Ubuntu VM, keep pressing *MAIUSC* or *SHIFT* key in order to enter into the boot menu. ![Gnu grub menu](/wp-content/uploads/2023/03/gnu-grub-1.png.webp) Select Advanced Options for Ubuntu
 
-<div class="wp-block-cover aligncenter" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim"></span>![Gnu grub menu](https://www.pietrolc.com/wp-content/uploads/2023/03/gnu-grub-1.png)<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">Select Advanced Options for Ubuntu
+- Choose to continue in *recovery mode.* ![Gnu grub - recovery mode selection](/wp-content/uploads/2023/03/gnu-grub-2.png.webp) Continue in recovery mode
 
-</div></div>- Choose to continue in *recovery mode.*
+- When you are in the *recovery menu*, check the “system summary”. ![Choose system summary from recovery menu](/wp-content/uploads/2023/03/gnu-grub-recovery-menu.png.webp) Choose system summary
 
-<div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim"></span>![Gnu grub - recovery mode selection](https://www.pietrolc.com/wp-content/uploads/2023/03/gnu-grub-2.png)<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">Continue in recovery mode
+- In the system information, you should be able to see how much space is available on each mounted device, as shown in the picture below: ![System Information - hard disk is almost full](/wp-content/uploads/2023/03/gnu-grub-recovery-menu-used-hdd-space.png.webp) The black screen issue occurs when the hard-disk is used 100%.
 
-</div></div>- When you are in the *recovery menu*, check the “system summary”.
-
-<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim"></span>![Choose system summary from recovery menu](https://www.pietrolc.com/wp-content/uploads/2023/03/gnu-grub-recovery-menu.png)<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">Choose system summary
-
-</div></div>- In the system information, you should be able to see how much space is available on each mounted device, as shown in the picture below:
-
-<div class="wp-block-cover is-light has-custom-content-position is-position-top-center"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim"></span>![System Information - hard disk is almost full](https://www.pietrolc.com/wp-content/uploads/2023/03/gnu-grub-recovery-menu-used-hdd-space.png)<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">The black screen issue occurs when the hard-disk is used 100%.
-
-</div></div>If the available free space is zero, then you have confirmed the root cause of your black screen issue.
+If the available free space is zero, then you have confirmed the root cause of your black screen issue.
 
 ## How-to fix the black screen issue for your Ubuntu VM?
 
