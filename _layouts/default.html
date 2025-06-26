@@ -39,11 +39,6 @@
         </ul>
         {% endif %}
 
-		<div id="search-container">
-		<input type="text" id="search-input" placeholder="Search...">
-		<ul id="search-results"></ul>
-		</div>
-
         <h3>Navigation</h3>
         <ul>
           {% for category in site.categories %}
@@ -54,8 +49,14 @@
           {% endfor %}
         </ul>
 
+        <script async src="https://cse.google.com/cse.js?cx=a12a8043c907c408f"></script>
+        <div class="gcse-searchbox"></div>
+
+
       </header>
       <section>
+
+      <div class="gcse-searchresults"></div>
 
       {{ content }}
 
@@ -68,8 +69,5 @@
         <p><small><a href="{{ site.baseurl }}/_pages/privacy-cookies-policy.md">Privacy & Cookies Policy</a></small></p>
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
-	<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
   </body>
 </html>
