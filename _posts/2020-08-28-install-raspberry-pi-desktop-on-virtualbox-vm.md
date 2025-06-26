@@ -65,7 +65,7 @@ um_content_restriction:
     - 'a:8:{s:26:"_um_custom_access_settings";b:0;s:14:"_um_accessible";i:0;s:28:"_um_access_hide_from_queries";b:0;s:19:"_um_noaccess_action";i:0;s:30:"_um_restrict_by_custom_message";i:0;s:27:"_um_restrict_custom_message";s:0:"";s:19:"_um_access_redirect";i:0;s:23:"_um_access_redirect_url";s:0:"";}'
 image: /wp-content/uploads/2020/08/WelcomeToRaspbian.jpg.webp
 categories:
-    - 'How-to &amp; tutorials'
+    - 'How-to and tutorials'
 tags:
     - 'Linux OS'
     - 'Raspberry Pi'
