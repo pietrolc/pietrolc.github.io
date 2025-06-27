@@ -22,7 +22,7 @@ repository:
   name: pietrolc.github.io
   url: https://github.com/pietrolc/pietrolc.github.io
 
-logo: https://www.pietrolc.com/wp-content/uploads/2019/11/pietrolc_logo_footer.png
+logo: /wp-content/uploads/2019/11/pietrolc_logo_footer.png
 
 #url: 'https://www.pietrolc.com'
 title: My C++ coding challenges to boost your skills!
@@ -38,6 +38,7 @@ show_calendly: true
 github:
   - is_project_page: false
   - is_user_page: true
+  - owner_url: https://github.com/pietrolc/
 
 # Build settings
 theme: jekyll-theme-minimal
