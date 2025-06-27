@@ -5,6 +5,7 @@ date: '2020-08-22T11:56:32+02:00'
 author: 'Pietro L. Carotenuto'
 layout: page
 guid: 'https://www.pietrolc.com/?page_id=3423'
+permalink: /terms-and-conditions/
 inline_featured_image:
     - '0'
 rank_math_description:
