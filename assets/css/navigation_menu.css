@@ -1,27 +1,37 @@
-/* --- Site Navigation Styles --- */
+/* --- Global Reset/Base for Responsiveness --- */
+html {
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width */
+}
+*, *::before, *::after {
+    box-sizing: inherit; /* Applies box-sizing to all elements */
+}
+
+/* --- Site Navigation Styles (Base for larger screens / desktop-first) --- */
 .site-navigation {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #fff;
     border: 1px solid #e0e0e0;
-    border-radius: 6px; /* Slightly smaller radius */
-    padding: 15px 10px; /* Reduced padding */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Lighter, less spread shadow */
-    max-width: 250px; /* Narrower width */
-    margin: 0;
+    border-radius: 6px;
+    padding: 15px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    max-width: 250px; /* Default narrow width for larger screens (desktop/larger tablets) */
+    margin: 0; /* Adjust this based on your main layout */
     color: #333;
-    font-size: 0.95em; /* Slightly smaller base font size */
+    font-size: 0.95em;
+    width: 100%; /* Default to full width for fluid behavior */
+    flex-shrink: 0; /* Prevents navigation from shrinking in a flex container */
 }
 
 /* Section Titles (Navigation, Blog:) */
 .nav-section-title {
-    font-size: 1em; /* Smaller font for titles */
+    font-size: 1em;
     font-weight: 700;
     color: #2c3e50;
-    margin: 15px 0 10px; /* Reduced margins */
-    padding-bottom: 5px; /* Thinner underline spacing */
-    border-bottom: 1px solid #c0d9ec; /* Lighter, thinner underline */
+    margin: 15px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c0d9ec;
     text-transform: uppercase;
-    letter-spacing: 0.5px; /* Slightly less spacing */
+    letter-spacing: 0.5px;
 }
 
 .nav-section-title:first-of-type {
@@ -34,16 +44,16 @@
     display: block;
     color: #34495e;
     text-decoration: none;
-    padding: 8px 12px; /* Reduced padding for links */
-    margin-bottom: 5px; /* Less space between links */
-    border-radius: 4px; /* Slightly smaller radius */
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 0.9em; /* Smaller font for links */
+    font-size: 0.9em;
 }
 
 .nav-link:hover,
 .category-link:hover {
-    background-color: #eef5fb; /* Lighter hover background */
+    background-color: #eef5fb;
     color: #2980b9;
 }
 
@@ -55,22 +65,133 @@
 }
 
 .category-item {
-    margin-bottom: 3px; /* Even less space between category items */
+    margin-bottom: 3px;
 }
 
 /* Adjustments for Category Links within a list */
 .category-item .category-link {
-    display: inline-block;
-    padding: 6px 10px; /* Even smaller padding for category links */
+    display: inline-block; /* Allows post-count to sit next to it */
+    padding: 6px 10px;
 }
 
 /* Post Count */
 .post-count {
-    font-size: 0.75em; /* Even smaller font size */
-    color: #95a5a6; /* Muted grey for less emphasis */
-    background-color: #e8ecef; /* Lighter background */
-    padding: 2px 6px; /* Reduced padding */
-    border-radius: 10px; /* Slightly smaller pill shape */
-    margin-left: 6px; /* Less space from the category name */
+    font-size: 0.75em;
+    color: #95a5a6;
+    background-color: #e8ecef;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 6px;
     font-weight: 500;
+    white-space: nowrap; /* Prevents number from wrapping to a new line */
+}
+
+/* ========================================= */
+/* MEDIA QUERIES FOR RESPONSIVENESS    */
+/* ========================================= */
+
+/* Tablet Optimization (e.g., iPads in portrait, larger Android tablets) */
+/* From 768px up to 1024px (common tablet range) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .site-navigation {
+        max-width: 280px; /* Slightly wider for tablets to fill space better */
+        padding: 20px 15px; /* More generous padding */
+        font-size: 1em; /* Slightly larger base font size for readability */
+        margin: 0 10px; /* Add some side margin if it's not a full-height sidebar */
+    }
+
+    .nav-section-title {
+        font-size: 1.1em;
+        margin: 20px 0 12px;
+        padding-bottom: 6px;
+    }
+
+    .nav-link,
+    .category-link {
+        padding: 10px 15px; /* Easier to tap */
+        font-size: 0.95em; /* Slightly larger */
+        margin-bottom: 6px;
+    }
+
+    .category-item {
+        margin-bottom: 4px;
+    }
+
+    .category-item .category-link {
+        padding: 8px 12px;
+    }
+
+    .post-count {
+        font-size: 0.8em;
+        padding: 3px 8px;
+        margin-left: 8px;
+    }
+}
+
+/* Smartphone Optimization (e.g., iPhones, Android phones) */
+/* Up to 767px (everything smaller than typical tablet portrait) */
+@media (max-width: 767px) {
+    .site-navigation {
+        border-radius: 0; /* Makes it flush with screen edges */
+        border-left: none;
+        border-right: none;
+        box-shadow: none; /* Less prominent on small screens */
+        padding: 12px 15px; /* Adequate padding for mobile */
+        font-size: 1.05em; /* Larger base font size for legibility */
+        margin: 0; /* No side margins for full-width */
+        /* If this navigation becomes a top/bottom bar or hidden menu,
+           its positioning and display will change here. */
+    }
+
+    .nav-section-title {
+        font-size: 1.15em; /* Clearer titles */
+        margin: 15px 0 10px;
+        padding-bottom: 6px;
+    }
+
+    .nav-link,
+    .category-link {
+        padding: 12px 18px; /* Generous touch targets */
+        font-size: 1em; /* Standard mobile link size */
+        margin-bottom: 4px; /* Sufficient spacing */
+    }
+
+    .category-item {
+        margin-bottom: 2px; /* A bit tighter for lists on mobile */
+    }
+
+    .category-item .category-link {
+        padding: 10px 15px; /* Slightly adjusted padding */
+    }
+
+    .post-count {
+        font-size: 0.85em; /* More visible post count */
+        padding: 4px 10px;
+        margin-left: 8px;
+    }
+}
+
+/* Even smaller phones (e.g., iPhone SE, older small devices) */
+@media (max-width: 375px) {
+    .site-navigation {
+        padding: 10px 12px;
+        font-size: 1em;
+    }
+
+    .nav-section-title {
+        font-size: 1.1em;
+        margin: 12px 0 8px;
+    }
+
+    .nav-link,
+    .category-link {
+        padding: 10px 15px;
+        font-size: 0.95em;
+    }
+
+    .post-count {
+        font-size: 0.8em;
+        padding: 3px 8px;
+        margin-left: 6px;
+    }
 }
