@@ -22,7 +22,7 @@ repository:
   name: pietrolc.github.io
   url: https://github.com/pietrolc/pietrolc.github.io
 
-logo: /wp-content/uploads/2019/11/pietrolc_logo_footer.png
+logo: /wp-content/uploads/2019/11/pietrolc_logo_footer.png.webp
 
 #url: 'https://www.pietrolc.com'
 title: My C++ coding challenges to boost your skills!
@@ -103,14 +103,14 @@ toc:
   item_prefix: toc-
 
 compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
+  clippings: []
+  comments: []
+  endings: []
   ignore:
-    envs: [local]
+    envs: []
   blanklines: true
   profile: false
-  startings: [html, head, body]
+  startings: []
 
 defaults:
   - scope:
