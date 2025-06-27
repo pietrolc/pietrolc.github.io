@@ -5,7 +5,7 @@ date: '2019-10-29T13:23:22+01:00'
 author: 'Pietro L. Carotenuto'
 layout: page
 guid: 'https://www.pietrolc.com/?page_id=2004'
-permalink: /privacy-cookie-policy/
+permalink: /privacy-cookies-policy/
 inline_featured_image:
     - '0'
 uag_style_timestamp-css:
