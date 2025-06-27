@@ -37,6 +37,7 @@ show_calendly: true
 
 github:
   - is_project_page: false
+  - is_user_page: true
 
 # Build settings
 theme: jekyll-theme-minimal
