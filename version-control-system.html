@@ -1,0 +1,16 @@
+---
+layout: default
+title: "Version Control Systems"
+permalink: /categories/version-control-systems/
+---
+
+<h1>Posts in Category "Version Control Systems"</h1>
+
+<ul>
+  {% for post in site.categories["Version Control Systems"] %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      ({{ post.date | date_to_string }})
+    </li>
+  {% endfor %}
+</ul>
