@@ -492,18 +492,19 @@ The algorithm has been executed for all the *unsolved* test scenarios, as shown 
 [![more pizza quite big console output](/wp-content/uploads/2020/04/morepizza_quitebig_consoleoutput.jpg)](/wp-content/uploads/2020/04/morepizza_quitebig_consoleoutput.jpg) Quite big
 [![more pizza also big console output](/wp-content/uploads/2020/04/morepizza_alsobig_consoleoutput.jpg)](/wp-content/uploads/2020/04/morepizza_alsobig_consoleoutput.jpg) Also Big
 
-###Results for each test scenario
+### Results for each test scenario
 
 In the following table, the average execution time for each scenario is shown:
 
-<figure class="wp-block-table">| Scenario | Average execution time |
+| Scenario | Average execution time |
 |---|---|
 | Small | &lt;1s |
 | Medium | &lt;1s |
 | Quite Big | 1-2 minutes |
 | Also Big | &lt;1s |
 
-[Input files (scenarios) for the “More Pizza” problem](/wp-content/uploads/2020/03/more-pizza-scenarios.zip)[Download](/wp-content/uploads/2020/03/more-pizza-scenarios.zip)
+[Input files (scenarios) for the “More Pizza” problem](/wp-content/uploads/2020/03/more-pizza-scenarios.zip) 
+[[Download]](/wp-content/uploads/2020/03/more-pizza-scenarios.zip)
 
 ## The complete code
 
@@ -521,25 +522,31 @@ In the following table, the average execution time for each scenario is shown:
 #include <set>
 #include <random>
 #include <memory>
+
 using namespace std;
+
 // Default input and output filenames 
 string iFileName{ "..\a_example.in" };
 string oFileName{ "..\a_example.out" };
+
 // Max number of slices (capacity)
 int32_t M{ 0 };
 // Number available of pizzas
 int32_t N{ 0 };
 using TSol = vector<int32_t>; // it is used for both pizzas and solution
 TSol pizzas{}; // storing number of slices of each pizza
+
 // Random numbers generator
 std::random_device rd;
 std::mt19937 g(rd());
 std::uniform_int_distribution<int32_t> rnProbValue(0, 100);
 std::uniform_real_distribution<double> rnProb(0, 1);
+
 // Number of neighbours to check
 int32_t numMaxItemsToCheck{ 5u };
 double T0 = 10000.0; // Default initial temperature
 double ae = 0.000001; // Default reduction factor
+
 // Read input data from a file
 void readInput()
 {
@@ -574,6 +581,7 @@ struct TSolCnt
             availablePizzas[i]=i;
         }
     }
+
     // Constructor used to make an initial solution
     TSolCnt( std::uniform_int_distribution<>& rnPizzaID ) :
         sol(), // empty solution
@@ -617,6 +625,7 @@ struct TSolCnt
             }
         }
     }
+
     TSolCnt& operator= (const TSolCnt& rhs)
     {
         score = rhs.score;
@@ -624,6 +633,7 @@ struct TSolCnt
         availablePizzas = rhs.availablePizzas;
         return *this;
     };
+
     void mutate(
         std::uniform_int_distribution<int32_t>& rnPizzaID,
         const int32_t maxNumRemovals)
@@ -671,6 +681,7 @@ struct TSolCnt
             }
         }
     }
+
     // Helper function to print the solution
     void print()
     {
@@ -684,6 +695,7 @@ struct TSolCnt
         cout << endl;
         cout << "Score: " << score << endl;
     }
+
     // Save solution to a file.
     // The name of the file is SCENARIO + "_" + SCORE + ".txt"
     void saveSolutionToFile()
@@ -713,6 +725,7 @@ struct TSolCnt
     // refers to each value stored inside this vector.
     TSol availablePizzas;
 };
+
 // Using smart pointers, it is straightforward and faster
 // to replace local solution with a better solution.
 using TSolPtr = std::shared_ptr<TSolCnt>;
@@ -767,10 +780,10 @@ void orderPizzas()
             savedSol.swap(bestNb);
             localSol = std::make_shared<TSolCnt>(*savedSol);
             savedSol->saveSolutionToFile();
-            cout << "New max score: " << savedSol->score << "tsize: " << savedSol->sol.size();
-            cout << "tTemperature: " << temperature;
-            cout << "tdelta: " << deltaEnergy;
-            cout << "tnumItBetweenImprovements: " << numItBetweenImprovement << endl;
+            cout << "New max score: " << savedSol->score << "\tsize: " << savedSol->sol.size();
+            cout << "\tTemperature: " << temperature;
+            cout << "\tdelta: " << deltaEnergy;
+            cout << "\tnumItBetweenImprovements: " << numItBetweenImprovement << endl;
             numItBetweenImprovement = 0;
 #ifdef _DEBUG
             savedSol->print();
@@ -783,23 +796,25 @@ void orderPizzas()
             if (rnProb(g) < probAccept) // accepted
             {
                 localSol.swap(bestNb);
-                cout << "Accepted lower score: " << localSol->score << "tsize: " << localSol->sol.size();
+                cout << "Accepted lower score: " << localSol->score << "\tsize: " << localSol->sol.size();
             }
             else
             {
                 // Reset local solution to be equal to the best one found until now
                 localSol = std::make_shared<TSolCnt>(*savedSol);
-                cout << "Unaccepted lower score: " << bestNb->score << "tsize: " << bestNb->sol.size();
+                cout << "Unaccepted lower score: " << bestNb->score << "\tsize: " << bestNb->sol.size();
             }
-            cout << "tTemperature: " << temperature;
-            cout << "tProbAccept: " << probAccept;
-            cout << "tnumIts: " << numItBetweenImprovement << "r";
+            cout << "\tTemperature: " << temperature;
+            cout << "\tProbAccept: " << probAccept;
+            cout << "\tnumIts: " << numItBetweenImprovement << "\r";
             ++numItBetweenImprovement;
         }
     }
+
 #ifdef _DEBUG
     savedSol->print();
 #endif // _DEBUG
+
 }
 int main(int argc, char* argv[])
 {
@@ -824,6 +839,7 @@ int main(int argc, char* argv[])
             }
         }
     }
+
     std::cout << "input file: " << iFileName << endl;
     std::cout << "output file: " << oFileName << endl;
     std::cout << "initial temperature: " << T0 << endl;
@@ -840,3 +856,10 @@ int main(int argc, char* argv[])
     return 0;
 }
 ```
+
+## New code - using OOP design - is on Github!
+After five years, I've found the time to refactor this original code I used for the Google HashCode challenge.
+I've decided to split this large piece of code into smaller classes.
+The complete and updated code can be found here: [SimulatedAnnealingCpp repo](https://github.com/pietrolc/SimulatedAnnealingCpp).
+
+Hope this helps!
