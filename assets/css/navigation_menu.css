@@ -1,0 +1,76 @@
+/* --- Site Navigation Styles --- */
+.site-navigation {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px; /* Slightly smaller radius */
+    padding: 15px 10px; /* Reduced padding */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Lighter, less spread shadow */
+    max-width: 250px; /* Narrower width */
+    margin: 0;
+    color: #333;
+    font-size: 0.95em; /* Slightly smaller base font size */
+}
+
+/* Section Titles (Navigation, Blog:) */
+.nav-section-title {
+    font-size: 1em; /* Smaller font for titles */
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 15px 0 10px; /* Reduced margins */
+    padding-bottom: 5px; /* Thinner underline spacing */
+    border-bottom: 1px solid #c0d9ec; /* Lighter, thinner underline */
+    text-transform: uppercase;
+    letter-spacing: 0.5px; /* Slightly less spacing */
+}
+
+.nav-section-title:first-of-type {
+    margin-top: 0;
+}
+
+/* "About me" Link and Category Links */
+.nav-link,
+.category-link {
+    display: block;
+    color: #34495e;
+    text-decoration: none;
+    padding: 8px 12px; /* Reduced padding for links */
+    margin-bottom: 5px; /* Less space between links */
+    border-radius: 4px; /* Slightly smaller radius */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9em; /* Smaller font for links */
+}
+
+.nav-link:hover,
+.category-link:hover {
+    background-color: #eef5fb; /* Lighter hover background */
+    color: #2980b9;
+}
+
+/* Category List */
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    margin-bottom: 3px; /* Even less space between category items */
+}
+
+/* Adjustments for Category Links within a list */
+.category-item .category-link {
+    display: inline-block;
+    padding: 6px 10px; /* Even smaller padding for category links */
+}
+
+/* Post Count */
+.post-count {
+    font-size: 0.75em; /* Even smaller font size */
+    color: #95a5a6; /* Muted grey for less emphasis */
+    background-color: #e8ecef; /* Lighter background */
+    padding: 2px 6px; /* Reduced padding */
+    border-radius: 10px; /* Slightly smaller pill shape */
+    margin-left: 6px; /* Less space from the category name */
+    font-weight: 500;
+}

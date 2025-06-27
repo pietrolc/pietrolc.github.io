@@ -43,23 +43,29 @@ layout: compress
         </ul>
         {% endif %}
 
-        <h3>Navigation</h3>
-        <ul>
-          {% for category in site.categories %}
-            <li>
-              <a href="/categories/{{ category[0] | slugify }}/">{{ category[0] }}</a>
-              ({{ category[1].size }} posts)
-            </li>
-          {% endfor %}
-        </ul>
-
-        {% if site.show_calendly %}
+		<link rel="stylesheet" href="/assets/css/navigation_menu.css">
+        <nav class="site-navigation">
+            <p class="nav-section-title">Navigation</p>
+            <a href="/about/" title="About me" class="nav-link">About me</a>
+		{% if site.show_calendly %}
         <!-- Calendly link widget begin -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pietrolc/30min'});return false;">Looking for a skilled C++ Developer?</a>
+        <a class="nav-link" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pietrolc/30min'});return false;">Looking for a skilled C++ Developer?</a>
         <!-- Calendly link widget end -->
         {% endif %}
+        
+            <p class="nav-section-title">Blog:</p>
+            <ul class="category-list">
+              {% for category in site.categories %}
+                <li class="category-item">
+                  <a href="/categories/{{ category[0] | slugify }}/" class="category-link">{{ category[0] }}</a>
+                  <span class="post-count">({{ category[1].size }} posts)</span>
+                </li>
+              {% endfor %}
+            </ul>
+
+        </nav>
 
       </header>
       <section>
