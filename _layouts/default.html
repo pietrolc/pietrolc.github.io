@@ -53,6 +53,14 @@ layout: compress
           {% endfor %}
         </ul>
 
+        {% if site.show_calendly %}
+        <!-- Calendly link widget begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pietrolc/30min'});return false;">Looking for a skilled C++ Developer?</a>
+        <!-- Calendly link widget end -->
+        {% endif %}
+
       </header>
       <section>
 
@@ -72,12 +80,6 @@ layout: compress
         <p><small><a href="{{ site.baseurl }}/_pages/privacy-cookies-policy.md">Privacy & Cookies Policy</a></small></p>
       </footer>
     </div>
-
-<!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/pietrolc/30min', text: 'Looking for a skilled C++ Developer?', color: '#0069ff', textColor: '#ffffff' }); }</script>
-<!-- Calendly badge widget end -->
 
   </body>
 </html>

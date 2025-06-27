@@ -33,6 +33,7 @@ url: "https://pietrolc-github-io.pages.dev" # the base hostname & protocol for y
 permalink: /:title
 twitter_username: pietrolcdotcom
 github_username:  pietrolc
+show_calendly: true
 
 github:
   - is_project_page: false
