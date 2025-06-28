@@ -6,9 +6,9 @@ author: 'Pietro L. Carotenuto'
 excerpt: 'Senior Software Developer with over nine years of experience in C++ programming and software testing. Ph.D. in Information Engineering.'
 ---
 
-# I'm a Senior C++ Software Engineer
+## I'm a Senior C++ Software Engineer
 
-Technical skills:
+**Technical skills**:
 * C++11/14/17/20 (10 years of experience)
 * Python (5 years of experience)
 * Testing (Boost Tests and Turtle Mock, Google Frameworks and GMock, 10 years of experience)
@@ -21,7 +21,7 @@ Technical skills:
 * Unreal Engine (studying)
 
 
-## Some additional words...
+### Some additional words...
 
 I'm a Senior Software Developer with over nine years of experience in C++ programming and software testing, primarily within the Automotive sector. I hold a Ph.D. in Information Engineering, which has provided me with a strong foundation in complex problem-solving and an analytical mindset.
 
@@ -35,11 +35,11 @@ Outside of my professional life, I'm a C++ blogger, dedicated to fostering a com
 
 I am always eager to connect with fellow professionals and explore opportunities where my skills and passion for C++ development can contribute to innovative solutions.
 
-## Reviews
+### Reviews
 
 ![What people is saying about me...](/images/about/PLC_LinkedIn_Recommendations.webp "Recommendations from LinkedIn")
 
-### Connect with me:
+#### Connect with me:
 
 * [**GitHub Profile**](https://github.com/pietrolc)
 * [**LinkedIn Profile**](https://www.linkedin.com/in/pietroluigicarotenuto/)
