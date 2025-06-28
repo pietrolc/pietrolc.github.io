@@ -19,10 +19,8 @@ layout: compress
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.url }}</a></h1>
-
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="PietroLC.com Logo - Blog and Coding Challenges for skilled developers" />
+        <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="PietroLC.com Logo - Blog and Coding Challenges for skilled developers" /></a>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>

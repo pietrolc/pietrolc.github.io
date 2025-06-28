@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<!--<h1>Welcome to {{ site.title }}</h1>-->
+<h1>{{ site.title | default: site.url }}</h1>
 
 <style>
 .all-posts ul,
