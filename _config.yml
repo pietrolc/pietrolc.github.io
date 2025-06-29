@@ -63,6 +63,15 @@ authors:
     bio: "Software engineer and watercolor enthusiast."
     url: https://www.pietrolc.com  # Optional
 
+social:
+  name: Pietro Luigi Carotenuto
+  links:
+    - https://twitter.com/pietrolcdotcom
+    - https://www.facebook.com/pietrolc
+    - https://www.linkedin.com/in/pietroluigicarotenuto/
+    - https://github.com/pietrolc
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
