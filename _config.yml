@@ -120,6 +120,9 @@ compress_html:
   profile: false
   startings: []
 
+ feed:
+  excerpt_only: true
+
 defaults:
   - scope:
       path: ""
