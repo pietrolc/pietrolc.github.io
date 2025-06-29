@@ -72,6 +72,9 @@ title: Home
           {{ post.title }}
         </a>
         <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+        {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
