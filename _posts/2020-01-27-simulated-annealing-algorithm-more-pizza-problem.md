@@ -243,6 +243,10 @@ In my algorithm, the algorithm stops if the best solution has been found or if a
 
 Even if it looks a long algorithm, in effect its implementation has taken no more than one hour and a half. Therefore, it is suitable for the Online Qualification round too (especially if you already have some good snippet of code).
 
+## Finally, what about the implemented code?
+
+You can find the C++ code of the algorithm described in this post here: [Simulated annealing - C++ implementation ({{ '/simulated-annealing-algorithm-cpp-implementation/' | relative_url }}) 
+
 ## Conclusions
 
 In this article, I’ve discussed about the algorithm used to solve the Knapsack 0/1 problem that Google has proposed this year. The proposed algorithm is suitable to be used also for other problems proposed during the qualification round in the past years. My goal was to prepare you to face the next Google Hash Code challenge.

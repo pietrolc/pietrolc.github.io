@@ -24,12 +24,11 @@ repository:
 
 logo: /wp-content/uploads/2019/11/pietrolc_logo_footer.png.webp
 
-#url: 'https://www.pietrolc.com'
 title: My C++ coding challenges to boost your skills!
 name: PietroLC.com
 description: 'Coding challenges for C++ Software Developers'
+url: "https://www.pietrolc.com" #domain name of your site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.pietrolc.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:title
 twitter_username: pietrolcdotcom
 github_username:  pietrolc
