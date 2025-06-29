@@ -17,27 +17,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 repository:
   name: pietrolc.github.io
   url: https://github.com/pietrolc/pietrolc.github.io
 
 logo: /wp-content/uploads/2019/11/pietrolc_logo_footer.png.webp
-
+url: "https://www.pietrolc.com" #domain name of your site
+baseurl: "" # the subpath of your site, e.g. /blog
 title: My C++ coding challenges to boost your skills!
 name: PietroLC.com
 description: 'Coding challenges for C++ Software Developers'
-url: "https://www.pietrolc.com" #domain name of your site
-baseurl: "" # the subpath of your site, e.g. /blog
+
 permalink: /:title
 twitter_username: pietrolcdotcom
 github_username:  pietrolc
 show_calendly: true
 
 github:
-  - is_project_page: false
-  - is_user_page: true
-  - owner_url: https://github.com/pietrolc/
+  is_project_page: false
+  is_user_page: false
+  owner_url: https://github.com/pietrolc/
 
 # Build settings
 theme: jekyll-theme-minimal
@@ -120,7 +119,7 @@ compress_html:
   profile: false
   startings: []
 
- feed:
+feed:
   excerpt_only: true
 
 defaults:
