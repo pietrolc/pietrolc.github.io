@@ -29,7 +29,7 @@ tags:
 
 In the latest TIOBE Programming Language Index for July 2024, C++ has surpassed C to claim the second position. This significant rise reflects the growing demand for C++ in various sectors, including game development, embedded systems, and financial applications.
 
-The [TIOBE Index](https://www.pietrolc.com/tag/tiobe-index/) ranks programming languages based on the number of search engine queries, making it a reliable indicator of language popularity. C++ has experienced a 5.93% increase in popularity compared to the same period last year, far ahead of all other languages.
+The **TIOBE Index** ranks programming languages based on the number of search engine queries, making it a reliable indicator of language popularity. C++ has experienced a 5.93% increase in popularity compared to the same period last year, far ahead of all other languages.
 
 ### Factors Contributing to C++’s Popularity
 
