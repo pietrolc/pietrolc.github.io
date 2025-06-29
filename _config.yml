@@ -94,7 +94,7 @@ exclude:
 collections:
   featured_categories:
     output: true
-    permalink: /category/:name/
+    permalink: /topic/:name/
   featured_tags:
     output: true
     permalink: /tag/:name/
