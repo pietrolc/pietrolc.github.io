@@ -75,7 +75,7 @@ Now, let’s have a look into some example code.
 
 In this basic example, we search for the lowest and the largest value of a list of integers. It is obvious how to compare integers values, but we can change the way the integers are compared specifying a custom comparator function or class/struct overloading the operator “()”.
 
-```
+```cpp
 #include <iostream>     // std::cout
 #include <list>         // My standard container
 #include <algorithm>    // std::min_element, std::max_element
@@ -110,17 +110,20 @@ Very simple! We can use the returned iterators where needed, unless they become 
 
 Let’s use min\_element() and max\_element() functions with a custom class:
 
-```
+```cpp
 #include <iostream>     // std::cout
 #include <vector>       // storing tasks in a vector
 #include <algorithm>    // std::min_element, std::max_element
+
 struct JobTask
 {
     int ID;
     int priority; // we are interested to the highest and lowest priority tasks
     bool operator<(JobTask& a) { return priority < a.priority; }
 };
+
 bool myfn(const JobTask& a, const JobTask& b) { return a.ID < b.ID; }
+
 int main() {
     std::vector<JobTask> myContainer(10);
     // init the vector of 10 elements
@@ -153,18 +156,23 @@ Have you noticed the operator overload at line 10? We need to specify the sortin
 
 There is more! In C++, the minimum and maximum value in a container can be found in a single line of code using the [std::minmax\_element()](https://www.cplusplus.com/reference/algorithm/minmax_element/) function!
 
-```
+```cpp
+
 #include <iostream>     // std::cout
 #include <vector>       // storing tasks in a vector
 #include <algorithm>    // std::min_element, std::max_element, std::minmax_element
+
 struct JobTask
 {
     int ID;
     int priority; // we are interested to the highest and lowest priority tasks
     bool operator<(JobTask& a) { return priority < a.priority; }
 };
+
 bool myfn(const JobTask& a, const JobTask& b) { return a.ID < b.ID; }
+
 int main() {
+
     std::vector<JobTask> myContainer(10);
     // init the vector of 10 elements
     for (int i = 0; i < 10; i++)
@@ -185,6 +193,7 @@ int main() {
     std::cout << "The largest ID is " << it2.second->ID <<
         " at position " << std::distance(myContainer.begin(), it2.second) << std::endl;
     return 0;
+    
 }
 ```
 

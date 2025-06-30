@@ -67,7 +67,7 @@ C++ also has a number of modern features that are not present in ANSI C, such as
 
 Additionally, C++ has a **rich Standard Library (STL)** that provides a wide range of useful functionality, such as *strings, containers, and algorithms*. This makes C++ a better choice for large, complex software projects that require a wide range of functionality.
 
-## Conclusions 
+### Conclusions
 
 To summarize, C and C++ are both powerful and versatile programming languages, each with its own set of advantages and disadvantages.
 

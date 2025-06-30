@@ -60,7 +60,7 @@ tags:
 
 The C++ vector can be initialized in different ways. This post provides basic examples of vector initialization ignoring all scenarios where the content of the new vector is copied from another array or container.
 
-## Initialization using the vector fill constructor (identical values)
+### Initialization using the vector fill constructor (identical values)
 
 A [std::vector](https://www.cplusplus.com/reference/vector/vector/) can be initialized using the std::vector fill constructor if we need a vector containing *M elements that are all equal* to a given value or object.
 
@@ -74,13 +74,13 @@ std::vector myCnt(M, 0);
 std::vector myCnt2(M, -5);
 ```
 
-## Filling a vector using the std::iota() function (increasing values)
+### Filling a vector using the std::iota() function (increasing values)
 
 The [std::iota()](http://www.cplusplus.com/reference/numeric/iota/) function is very useful when we need to fill a vector with an increasing group of values.
 
 For easy of understanding, we can fill our vector with M integers equal to 0, 1, 2, … , M – 1 as shown in this example:
 
-```
+```cpp
 #include <vector>       // std::vector
 #include <iostream>     // std::cout
 #include <numeric>      // std::iota
@@ -96,7 +96,7 @@ int main() {
 
 This example will print the following output:
 
-```
+```txt
 myCnt:  -10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9
 Press any key to continue . . .
 ```
@@ -104,13 +104,13 @@ Press any key to continue . . .
 The std::iota() does not allocate memory. For this reason, we need to construct the vector as shown previously.  
 This function operates on a user-defined range and it overwrites already existing values with the new ones.
 
-## Filling a vector using the std::generate() function (random values)
+### Filling a vector using the std::generate() function (random values)
 
 We can fill a vector using the function [std::generate()](http://www.cplusplus.com/reference/algorithm/generate/). For each element of the vector, this function executes a user-defined method to return (and assign) a certain object/value. For example, for each element of the vector, a random integer value can be returned and assigned to each vector element.
 
 In the example below, we are *generating* a vector of values randomly chosen between 0 and 99:
 
-```
+```cpp
 #include <vector>
 #include <iostream>     // std::cout
 #include <algorithm>    // std::generate
@@ -134,7 +134,7 @@ The function generator must accept no arguments and it should return the desired
 
 The code above will print something like (the *values are not guaranteed to be unique*.):
 
-```
+```txt
 myCnt2:  78 63 38 71 65 69 83 83 1 16 26 30 59 12 19 60 46 1 60 90
 Press any key to continue . . .
 ```
