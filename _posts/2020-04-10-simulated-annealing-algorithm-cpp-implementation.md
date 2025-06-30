@@ -64,7 +64,7 @@ tags:
     - 'Google hashcode'
 ---
 
-## Introduction
+## How whe Simulated Annealing algorithm works
 
 The idea behind the Simulated Annealing algorithm used to solve the “More Pizza” problem is very simple: starting from a randomly chosen solution, this is further improved until a stop condition is met (e.g., the maximum score is achieved).
 
@@ -72,7 +72,7 @@ The [description of the “More Pizza” algorithm](https://www.pietrolc.com/mor
 
 In this article, the C++ code implementation of that algorithm is provided and commented.
 
-## The main() function
+### The main() function
 
 Independently of the used approach, it is expected that these steps are followed:
 
@@ -84,7 +84,7 @@ Independently of the used approach, it is expected that these steps are followed
 
 A set of global variables have been defined at the very top of the script:
 
-```
+```cpp
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -124,7 +124,7 @@ double ae = 0.000001; // Default reduction factor
 
 The structure of the main() function replicates the steps listed above.
 
-```
+```cpp
 int main(int argc, char* argv[])
 {
     // Reading input parameters
@@ -169,11 +169,11 @@ int main(int argc, char* argv[])
 
 The validation of the solution and the saving of the solution to a file are part of the procedure itself. In fact, it is expected that each calculated solution is also valid. In addition, if the new solution improves the current result, then it should be saved to a file too.
 
-## Reading data from a file
+### Reading data from a file
 
 The following code has been implemented to read the input file. The first two integers represent the maximum number of slices (i.e., the maximum score) and the number of pizzas respectively. The remaining N integers represent the number of each pizza.
 
-```
+```cpp
 // Read input data from a file
 void readInput()
 {
@@ -197,7 +197,7 @@ void readInput()
 }
 ```
 
-## The solution class
+### The solution class
 
 I preferred to represent the solution inside a class to:
 
@@ -205,16 +205,14 @@ I preferred to represent the solution inside a class to:
 - store the score of the solution.
 - save the “state” of a solution (e.g., which pizzas can be added to the current solution).
 - implement utility functions to:
-    - create an empty solution (i.e., having zero score).
-    
-    
-    - create a random solution.
-    - change the current solution in a random way (please, check *mutate()* function).
-    - calculate the score of the solution (please, check *score()* function).
-    - save the solution into a file with the required format (please, check the function *saveSolutionToFile()* ).
-    - print the current solution to screen
+    -- create an empty solution (i.e., having zero score).
+    -- create a random solution.
+    -- change the current solution in a random way (please, check *mutate()* function).
+    -- calculate the score of the solution (please, check *score()* function).
+    -- save the solution into a file with the required format (please, check the function *saveSolutionToFile()* ).
+    -- print the current solution to screen
 
-```
+```cpp
 // Container used to store the solution
 // including its "state". The state of
 // a solution is required to quickly change it
@@ -372,7 +370,7 @@ struct TSolCnt
 };
 ```
 
-### How to quickly calculate new solutions?
+#### How to quickly calculate new solutions?
 
 The Simulated Annealing is – by its nature – a slow algorithm. Despite that, it is easy to adapt the code proposed in this article to solve many NP-hard problems.
 
@@ -386,11 +384,11 @@ For this reason, the vector of available pizzas is sorted so that the pizzas tha
 
 If no pizzas can be selected, then a score greater than the maximum value is achieved if the first at the front of the vector is chosen.
 
-## The orderPizzas() function
+### The orderPizzas() function
 
 As described in [this post](https://www.pietrolc.com/more-pizza-problem-algorithm-description/), the used algorithm is a “Simulated Annealing” procedure. Please, find the implementation of that algorithm below:
 
-```
+```cpp
 // Using smart pointers, it is straightforward and faster
 // to replace local solution with a better solution.
 using TSolPtr = std::shared_ptr<TSolCnt>;
@@ -483,7 +481,7 @@ void orderPizzas()
 
 Every time a better solution is found, it is also saved to a file. In this way, it is possible to commit as soon as possible a new solution to the Google Hash Code Judge System.
 
-## The console output
+### The console output
 
 The algorithm has been executed for all the *unsolved* test scenarios, as shown in the following images.
 
@@ -492,7 +490,7 @@ The algorithm has been executed for all the *unsolved* test scenarios, as shown 
 [![more pizza quite big console output](/wp-content/uploads/2020/04/morepizza_quitebig_consoleoutput.jpg)](/wp-content/uploads/2020/04/morepizza_quitebig_consoleoutput.jpg) Quite big
 [![more pizza also big console output](/wp-content/uploads/2020/04/morepizza_alsobig_consoleoutput.jpg)](/wp-content/uploads/2020/04/morepizza_alsobig_consoleoutput.jpg) Also Big
 
-### Results for each test scenario
+#### Results for each test scenario
 
 In the following table, the average execution time for each scenario is shown:
 
@@ -503,12 +501,11 @@ In the following table, the average execution time for each scenario is shown:
 | Quite Big | 1-2 minutes |
 | Also Big | &lt;1s |
 
-[Input files (scenarios) for the “More Pizza” problem](/wp-content/uploads/2020/03/more-pizza-scenarios.zip) 
-[[Download]](/wp-content/uploads/2020/03/more-pizza-scenarios.zip)
+[Input files (scenarios) for the “More Pizza” problem [Download]](/wp-content/uploads/2020/03/more-pizza-scenarios.zip)
 
-## The complete code
+### The complete code
 
-```
+```cpp
 // Author: Pietro L. Carotenuto
 // Website: https://www.pietrolc.com
 #include "stdafx.h"
@@ -857,9 +854,12 @@ int main(int argc, char* argv[])
 }
 ```
 
-## New code - using OOP design - is on Github!
+### New code - using OOP design - is on Github
+
 After five years, I've found the time to refactor this original code I used for the Google HashCode challenge.
 I've decided to split this large piece of code into smaller classes.
 The complete and updated code can be found here: [SimulatedAnnealingCpp repo](https://github.com/pietrolc/SimulatedAnnealingCpp).
 
 Hope this helps!
+
+---
