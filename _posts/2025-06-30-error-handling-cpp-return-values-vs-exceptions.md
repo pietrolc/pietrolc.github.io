@@ -21,11 +21,11 @@ Choosing between them is a fundamental design decision that impacts your code's 
 
 ---
 
-## Return Values: Handling Expected Failures
+### Return Values: Handling Expected Failures
 
 Return values are best suited for situations where a failure is an **expected or reasonably common outcome** of a function's operation. The caller is anticipated to check the return value and react accordingly.
 
-### Key Scenarios for Return Values:
+#### Key Scenarios for Return Values:
 
 * **Anticipated Failures as Part of Normal Operation:** Think of a function that tries to find an item in a list. If the item isn't there, that's not a catastrophic error; it's just a common search result.
     * *Example:* A `parseConfigFile()` function might return a `bool` to indicate `true` for success and `false` if the file format was invalid. The calling code expects to handle both outcomes.
@@ -33,7 +33,7 @@ Return values are best suited for situations where a failure is an **expected or
 * **Low-Level APIs & C Compatibility:** When designing libraries or modules that need to interface with C or other languages that don't support exceptions, return codes are the standard.
 * **Simple Success/Failure Indication:** For operations where a binary success/failure is sufficient, a `bool` or an integer error code works perfectly.
 
-### Modern C++ Tools for Return Values:
+#### Modern C++ Tools for Return Values:
 
 * [**std::optional\<T\> (C++17)**](https://en.cppreference.com/w/cpp/utility/optional.html) This is ideal when a function might successfully compute a value, or it might compute *nothing*. It represents the *potential absence* of a value.
   * *Example:* A `findUserById(int id)` function could return `std::optional<User>`: if the user exists, you get the `User` object; otherwise, an empty `std::optional` indicates the user wasn't found. This clearly communicates that a value might not be present, rather than using a special "null" value or an error code.
@@ -42,11 +42,11 @@ Return values are best suited for situations where a failure is an **expected or
 
 ---
 
-## Exceptions: Managing Exceptional Circumstances
+### Exceptions: Managing Exceptional Circumstances
 
 Exceptions are designed for **truly exceptional conditions** – situations that represent a deviation from the normal execution flow, something that "shouldn't happen" in a well-behaved program, or a violation of a function's **contract** (its promised behavior).
 
-### Key Scenarios for Exceptions:
+#### Key Scenarios for Exceptions:
 
 * **Truly Exceptional Errors:** These are problems that prevent a function from fulfilling its purpose. If a critical resource is unavailable or an operation is fundamentally impossible given the inputs.
   * *Examples:* `std::bad_alloc` (out of memory), `std::out_of_range` (accessing an array beyond its bounds), or failure to open a *critical* configuration file without which the program cannot function.
@@ -57,7 +57,7 @@ Exceptions are designed for **truly exceptional conditions** – situations that
 
 ---
 
-## Comparative Summary
+### Comparative Summary
 
 | Feature             | **Return Values** (`std::optional`, `std::expected`) | **Exceptions** |
 |---------------------|------------------------------------------------------|---------------|
@@ -72,7 +72,7 @@ Exceptions are designed for **truly exceptional conditions** – situations that
 
 ---
 
-## Best Practices for Robust C++ Error Handling
+### Best Practices for Robust C++ Error Handling
 
 * **The "Expected vs. Exceptional" Rule:** Use return values for anticipated failures; use exceptions for truly abnormal situations.
 * **Embrace RAII:** Always use RAII for resource management to ensure exception safety.
