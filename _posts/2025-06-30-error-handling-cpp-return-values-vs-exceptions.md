@@ -80,5 +80,6 @@ Exceptions are designed for **truly exceptional conditions** – situations that
 * **Prefer `std::expected` for fallible operations:** It provides clear, type-safe handling for functions that may fail.
 * **Consistency is key:** Establish and follow a consistent error-handling strategy within your team or project.
 
-Thoughtful error-handling choices are the hallmark of resilient and maintainable C++ code
+Thoughtful error-handling choices are the hallmark of resilient and maintainable C++ code.
+
 ---
