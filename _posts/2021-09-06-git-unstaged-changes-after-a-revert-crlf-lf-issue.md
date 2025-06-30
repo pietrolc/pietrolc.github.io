@@ -1,6 +1,7 @@
 ---
 id: 5716
 title: 'Git &#8211; Unstaged changes after a revert &#8211; CRLF/LF issue'
+excerpt: "If Git is not reverting the CRLF/LF characters at the end of the lines of the relevant files, this is what you need to do!"
 date: '2021-09-06T21:32:11+02:00'
 author: 'Pietro L. Carotenuto'
 layout: post
@@ -46,7 +47,7 @@ Surprisingly, when trying to checkout the new user branch, the same files were s
 
 Initially, I tried reverting again the changes to the last commit. Instead of git revert, I used the following command:
 
-```
+```txt
 git reset --hard HEAD
 ```
 
@@ -54,7 +55,7 @@ Unfortunately, it did not work. 🙁
 
 Indeed, when running the command:
 
-```
+```txt
 git status
 ```
 
@@ -64,17 +65,17 @@ I immediately realized that Git was not reverting the CRLF/LF characters at the 
 
 This was pretty evident because when running the git command:
 
-```
+```txt
 git diff
 ```
 
 the whole content of these files was shown.
 
-## The solution
+### The solution
 
 In order to solve this issue, I found a workaround solution:
 
-```
+```txt
 git checkout --force mySuperUserBranch
 ```
 
@@ -86,10 +87,12 @@ The [.gitattributes file](https://git-scm.com/docs/gitattributes) allows you to 
 
 Therefore, in order to solve this issue, an easy fix is provided by the following sequence of operations:
 
-```
+```txt
 git rm .gitattributes
 git add -A
 git reset --hard
 ```
 
 After getting the correct version of the .gitattributes file, it is possible to execute all those git commands that require no local changes (e.g., a git checkout or pull operation).
+
+---
