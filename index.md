@@ -53,7 +53,7 @@ title: Home
 </section>
 
 <section class="all-posts">
-  <h2>All Other Posts</h2>
+  <h3>All Other Posts</h3>
   <ul>
     {% assign other_posts = site.posts | reject: featured_posts %}
     {% for post in other_posts %}
