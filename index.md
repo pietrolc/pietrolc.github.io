@@ -47,6 +47,9 @@ title: Home
           {{ post.title }}
         </a>
         <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+        {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
@@ -55,7 +58,7 @@ title: Home
 <section class="all-posts">
   <h3>All Other Posts</h3>
   <ul>
-    {% assign other_posts = site.posts | reject: featured_posts %}
+    {% assign other_posts = site.posts | where_exp:"post", "post.featuredPost != true" %}
     {% for post in other_posts %}
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
