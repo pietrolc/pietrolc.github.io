@@ -16,6 +16,8 @@ excerpt: 'Experienced C++ Software Engineer in Malta with over nine years in C++
 * CI/CD
 * Familiar with Agile environment/process and Atlassian Tools
 * Docker
+* HTML, javascript, CSS, MySQL
+* Wordpress &amp; PHP
 * Go Language (studying)
 * RabbitMQ (studying)
 * Unreal Engine (studying)
