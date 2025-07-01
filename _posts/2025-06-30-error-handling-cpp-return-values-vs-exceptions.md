@@ -1,7 +1,7 @@
 ---
 author: 'Pietro L. Carotenuto'
 layout: post
-title: 'Error Handling in C++ - When to Use Return Values vs. Exceptions'
+title: 'Return Error Values vs. Exceptions in C++'
 title-tag: 'Error Handling in C++ - When to Use Return Values vs. Exceptions'
 excerpt: 'C++ offers two primary mechanisms: return values and exceptions. Choosing the right approach affects readability, maintainability, and performance.'
 date: 2025-06-30 11:27:56 +0200

@@ -1,6 +1,6 @@
 ---
 id: 4499
-title: 'Finding min and max values in a C++ standard container'
+title: 'Finding min and max values in a C++ container'
 date: '2021-03-24T18:29:49+01:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'How-to use C++ functions min_element() and max_element() to find the elements having the lowest and highest value in a container.'
