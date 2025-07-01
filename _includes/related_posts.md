@@ -44,7 +44,7 @@
         <a href="{{ site.baseurl }}{{ post.url }}">
               <div class="rel">
                   <h5>{{ post.title }}</h5>
-                  <img width="100%" src="{{ site.url }}{{ site.baseurl }}{{ post.image }}">
+                  <img width="100%" src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
               </div>
         </a>
     {% endcapture %}
