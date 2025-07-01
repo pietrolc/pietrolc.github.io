@@ -45,3 +45,9 @@ I'm proud of the positive feedback I've received from colleagues and managers th
 
 * [**GitHub Profile**](https://github.com/pietrolc)
 * [**LinkedIn Profile**](https://www.linkedin.com/in/pietroluigicarotenuto/)
+
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a class="nav-link" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/pietrolc/30min'});return false;" style="text-align:center;color: white;background: darkblue;">Looking for a skilled C++ developer? Let's chat!</a>
+<!-- Calendly link widget end -->
