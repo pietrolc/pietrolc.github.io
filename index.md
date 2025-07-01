@@ -1,6 +1,6 @@
 ---
 layout: default
-title: C++ coding challenges and programming tutorials
+title: C++ coding challenges & programming tutorials
 ---
 
 <h1>C++ coding challenges and programming tutorials</h1>
