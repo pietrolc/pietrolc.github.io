@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Coding Challenges for all skills levels"
+permalink: /topic/coding-challenges/
+excerpt: "Browse all coding challenges on this page—practice, prepare for interviews, and improve your skills with problems from beginner to advanced levels."
+---
+
+<h1>Coding Challenges for all skills levels</h1>
+
+<h2>What are Coding Challenges?</h2>
+
+<p>Coding challenges are practical exercises designed to test and improve your programming skills. They typically present a problem statement that requires you to write code to find a solution. These challenges can range from simple tasks, such as reversing a string or finding the largest number in an array, to more complex problems involving algorithms, data structures, and system design.</p>
+
+<h3>Why are Coding Challenges so important?</h3>
+
+<p>Participating in coding challenges offers several benefits. First, they help reinforce your understanding of programming concepts by applying them in real-world scenarios. Regular practice can also improve your problem-solving abilities, logical thinking, and familiarity with different programming languages and tools. For those preparing for technical interviews, coding challenges are invaluable, as many companies use similar problems to assess candidates’ skills and approach to problem-solving.</p>
+
+<h4>What can you find on this page?</h4>
+
+<p>On this page, you will find a curated list of coding challenges suitable for all skill levels. Whether you are a beginner looking to build a strong foundation or an experienced developer aiming to sharpen your skills, these problems provide an excellent opportunity for growth. Tackle them at your own pace, review solutions, and track your progress as you advance from basic to advanced challenges.</p>
+
+<ul>
+  {% for post in site.categories["Coding Challenges"] %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      ({{ post.date | date_to_string }})
+    </li>
+  {% endfor %}
+</ul>
