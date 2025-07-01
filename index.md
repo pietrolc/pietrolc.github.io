@@ -1,11 +1,15 @@
 ---
 layout: default
-title: My C++ coding challenges to boost your skills!
+title: C++ coding challenges and programming tutorials
 ---
 
-<h1>{{ site.title | default: site.url }}</h1>
+<h1>C++ coding challenges and programming tutorials</h1>
 
 <style>
+.featured-posts{
+  margin-top: 20px;
+}
+
 .all-posts ul,
 .featured-posts ul {
   list-style: none; /* Remove bullet points */
@@ -30,7 +34,9 @@ title: My C++ coding challenges to boost your skills!
 </style>
 
 <section class="featured-posts">
-  <h2>C++ Coding Challenges</h2>
+
+  <h2>C++ Coding Challenges &amp; Solutions</h2>
+
   <ul>
     {% assign featured_posts = site.posts | where: "featuredPost", true %}
     {% for post in featured_posts %}
@@ -58,7 +64,9 @@ title: My C++ coding challenges to boost your skills!
 </section>
 
 <section class="all-posts">
+
   <h3>All Other Posts</h3>
+
   <ul>
     {% assign other_posts = site.posts | where_exp:"post", "post.featuredPost != true" %}
     {% for post in other_posts %}
