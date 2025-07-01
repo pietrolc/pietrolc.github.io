@@ -36,6 +36,7 @@ title: Home
     {% for post in featured_posts %}
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
+          {% if post.image %}
           <img 
             src="{{ site.baseurl }}{{ post.image }}" 
             srcset="
@@ -44,6 +45,7 @@ title: Home
               {{ site.baseurl }}{{ post.image }} 960w"
             sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 960px"
             alt="{{ post.title }}" class="responsive-image">
+          {% endif %}
           {{ post.title }}
         </a>
         <small>{{ post.date | date: "%B %-d, %Y" }}</small>
