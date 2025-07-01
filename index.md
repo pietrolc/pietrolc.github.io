@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: My C++ coding challenges to boost your skills!
 ---
 
 <h1>{{ site.title | default: site.url }}</h1>

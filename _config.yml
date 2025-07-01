@@ -24,7 +24,7 @@ repository:
 logo: /wp-content/uploads/2019/11/pietrolc_logo_footer.png.webp
 url: "https://www.pietrolc.com" #domain name of your site
 baseurl: "" # the subpath of your site, e.g. /blog
-title: My C++ coding challenges to boost your skills!
+title: PietroLC.com
 name: PietroLC.com
 description: 'Coding challenges for C++ Software Developers'
 
