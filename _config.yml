@@ -69,6 +69,8 @@ social:
     - https://www.linkedin.com/in/pietroluigicarotenuto/
     - https://github.com/pietrolc
 
+include:
+  - _redirects
 
 # Exclude from processing.
 # The following items will not be processed, by default.
