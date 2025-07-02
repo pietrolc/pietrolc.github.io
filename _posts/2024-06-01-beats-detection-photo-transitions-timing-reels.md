@@ -1,6 +1,6 @@
 ---
 id: 73525
-title: 'Beats Detection &#038; Optimized Photo Transitions Timing for Reels'
+title: 'Beats Detection for Reels using Python'
 date: '2024-06-01T15:27:27+02:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'Do you know you can use Python for automatic beats detection and to optimize the photo transitions timing in your IG and FB reels?'

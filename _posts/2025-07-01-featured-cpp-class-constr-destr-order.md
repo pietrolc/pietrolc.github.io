@@ -1,7 +1,7 @@
 ---
 layout: post
 author: 'Pietro L. Carotenuto'
-title: C++ Object Construction and Destruction Order Challenge
+title: C++ Object Construction/Destruction Order
 date: 2025-07-01 10:35:29 +0200
 categories: [Coding Challenges]
 tags: ['C++', 'Class Hierarchy']

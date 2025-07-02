@@ -9,6 +9,7 @@ permalink: /a-man-walking-at-sunset-watercolor-painting/
 image: '/wp-content/uploads/2024/08/watercolor-painting-man-walking-at-sunset.webp'
 categories: [Art]
 tags: [Artwork, sea, sunset]
+excerpt: '“A Man Walking at Sunset” is my first watercolor painting, created with professional watercolor tubes and paper.'
 ---
 
 ![Watercolor painting by Pietro Luigi Carotenuto. Title: A man walking at sunset. July 30, 2024.](/wp-content/uploads/2024/08/watercolor-painting-man-walking-at-sunset.webp)

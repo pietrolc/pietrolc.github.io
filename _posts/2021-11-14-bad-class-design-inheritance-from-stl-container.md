@@ -1,6 +1,6 @@
 ---
 id: 4786
-title: 'An example of bad class design with STL containers: what&#8217;s the solution?'
+title: 'Bad class design with STL containers: how-to fix it?'
 date: '2021-11-14T22:23:05+01:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'A class must not inherit from a STL container to replicate its behavior and add some few new functionalities. Let''s see why...'

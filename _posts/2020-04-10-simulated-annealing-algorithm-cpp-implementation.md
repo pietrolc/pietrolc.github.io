@@ -1,6 +1,6 @@
 ---
 id: 2814
-title: 'A C++ implementation of the Simulated Annealing algorithm'
+title: 'Simulated Annealing algorithm | C++ code'
 date: '2020-04-10T16:31:18+02:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'In this article, the C++ code implementation of the "More Pizza" algorithm is provided and commented. The complete source file is available. '

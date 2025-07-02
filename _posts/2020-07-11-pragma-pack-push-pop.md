@@ -1,6 +1,6 @@
 ---
 id: 3153
-title: 'Understanding #pragma pack(push,n) / pack(pop)'
+title: 'Understanding #pragma pack(push,n)/pack(pop)'
 date: '2020-07-11T17:56:19+02:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'The directive #pragma pack is used to change the current packing alignment value on the internal compiler stack and  how data is stored inside a structure.'

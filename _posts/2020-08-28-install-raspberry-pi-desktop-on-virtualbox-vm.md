@@ -1,6 +1,6 @@
 ---
 id: 3479
-title: 'How-to install Raspberry PI Desktop (Raspbian) on a VirtualBox VM'
+title: 'How-to install Raspberry PI Desktop on a VM'
 date: '2020-08-28T17:30:43+02:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'Installing Raspberry PI Desktop (Raspbian) on a Virtualbox VM is very easy and it allows to run some basic scripts on an emulated Raspberry PI board.'

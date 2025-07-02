@@ -1,6 +1,6 @@
 ---
 id: 2428
-title: 'A Simulated Annealing algorithm to solve the &#8220;More pizza&#8221; problem'
+title: 'Simulated Annealing algorithm description'
 date: '2020-01-27T12:31:00+01:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'The description of the Simulated Annealing algorithm I used to get maximum score for the "More Pizza" problem.'
