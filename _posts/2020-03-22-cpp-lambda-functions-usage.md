@@ -1,6 +1,6 @@
 ---
 id: 2576
-title: 'C++ Lambda functions: mastering this Swiss Army knife'
+title: 'C++ Lambda functions: typical usages'
 date: '2020-03-22T16:52:57+01:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'C++ Lambda functions are largely used for many different purposes. In this post, 3 different examples are proposed to show classical usage of lambda functions.'
@@ -67,7 +67,7 @@ As explained in this [C++ Reference](https://en.cppreference.com/w/cpp/language/
 
 Most used form of a C++ Lambda function is highlighted in the following example:
 
-```
+```cpp
 #include "stdafx.h"
 #include <iostream>
 int main()
@@ -85,7 +85,7 @@ int main()
 
 Output:
 
-```
+```cmd
 Is 11 an even number? FALSE
 Press any key to continue . . .
 ```
@@ -102,7 +102,7 @@ Given this short introduction, some examples of lambda functions usage is provid
 
 ### 1) Initialize a class member variable
 
-```
+```cpp
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
@@ -141,7 +141,7 @@ int main()
 
 Output:
 
-```
+```cmd
 0
 1
 2
@@ -161,7 +161,7 @@ In this example, a vector is initialized using a lambda function. Generally, lam
 
 In this example, the lambda function includes only one call to a member function of the class “OtherFilterManager”.
 
-```
+```cpp
 #include "stdafx.h"
 #include <iostream>
 #include <set>
@@ -253,7 +253,7 @@ int main()
 
 Console output:
 
-```
+```cmd
 Cannot print msg since other check failed
 Message is empty
 This message is printed
@@ -270,7 +270,7 @@ In addition, using the lambda function, the “FilterManager” class does not n
 
 The previous example can be easily modified to use lambda functions to execute customized tasks, without necessarily returning any data to the caller function.
 
-```
+```cpp
 #include "stdafx.h"
 #include <iostream>
 #include <set>
@@ -365,7 +365,7 @@ int main()
 
 Console output:
 
-```
+```cmd
 Custom message on Failure!
 Integer is not printed.
 Valid integer ( 2 )
@@ -382,7 +382,7 @@ Using Lambda functions, copying the (private) data from inside the class “A”
 
 For easy of understanding, please consider the following snippet of code:
 
-```
+```cpp
     class B
     {
     public:

@@ -1,4 +1,5 @@
 /categories/* /topic/:splat 301
 /*/feed/ / 301
+/feed/ / 301
 /tag/* / 301
 /news/ /topic/news/ 301
