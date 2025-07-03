@@ -1,6 +1,7 @@
 ---
 layout: default
 title: C++ coding challenges & programming tutorials
+excerpt: "C++ blog, full of tutorials and coding challenges. Book a call with Pietro to discuss about C++ and more."
 ---
 
 <h1>C++ coding challenges and programming tutorials</h1>
