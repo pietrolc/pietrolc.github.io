@@ -1,6 +1,6 @@
 ---
 id: 72541
-title: 'Fix black screen issue for Ubuntu VM in 8 blessed steps'
+title: 'Fix black screen issue for Ubuntu VM in 8 steps'
 date: '2023-03-04T15:58:04+01:00'
 author: 'Pietro L. Carotenuto'
 layout: post

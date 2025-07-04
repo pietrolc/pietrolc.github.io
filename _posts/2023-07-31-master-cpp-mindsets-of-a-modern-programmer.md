@@ -1,6 +1,6 @@
 ---
 id: 72706
-title: 'Master C++ with the 5 Mindsets of a Modern Programmer'
+title: 'The 5 Mindsets of a Modern C++ Programmer'
 date: '2023-07-31T21:53:29+02:00'
 author: 'Pietro L. Carotenuto'
 excerpt: 'Learn the 5 mindsets that you need to have in order to master C++. This presentation will cover efficiency, concurrency, debugging, imperative, and functional mindsets.'

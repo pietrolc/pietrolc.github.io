@@ -41,7 +41,7 @@ layout: compress
             <ul class="category-list">
               {% for category in site.categories %}
                 <li class="category-item">
-                  <a href="/topic/{{ category[0] | slugify }}/" class="category-link">{{ category[0] }}</a>
+                  <a href="/{{ category[0] | slugify }}/" class="category-link">{{ category[0] }}</a>
                   <span class="post-count">({{ category[1].size }} posts)</span>
                 </li>
               {% endfor %}
@@ -67,6 +67,8 @@ layout: compress
 
       </header>
       <section>
+
+      {% include breadcrumbs.html %}
 
       <div class="top_search" style="margin-top: 10px; margin-bottom: 10px;">
           <script async src="https://cse.google.com/cse.js?cx=a12a8043c907c408f"></script>
