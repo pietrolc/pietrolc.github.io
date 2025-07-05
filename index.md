@@ -44,14 +44,15 @@ excerpt: "C++ blog, full of tutorials and coding challenges. Book a call with Pi
       <li>
         <a href="{{ post.url | prepend: site.baseurl }}">
           {% if post.image %}
-          <img 
-            src="{{ site.baseurl }}{{ post.image }}" 
-            srcset="
-              {{ site.baseurl }}{{ post.image }} 320w,
-              {{ site.baseurl }}{{ post.image }} 640w,
-              {{ site.baseurl }}{{ post.image }} 960w"
-            sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 960px"
-            alt="{{ post.title }}" class="responsive-image">
+            <img
+              src="/images/blank.png"
+              srcset="
+                {{ site.baseurl }}{{ post.image }} 320w,
+                {{ site.baseurl }}{{ post.image }} 640w,
+                {{ site.baseurl }}{{ post.image }} 960w"
+              sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 960px"
+              data-echo="{{ site.baseurl }}{{ post.image }}"
+              alt="{{ post.title }}" class="responsive-image">
           {% endif %}
           {{ post.title }}
         </a>
@@ -75,12 +76,13 @@ excerpt: "C++ blog, full of tutorials and coding challenges. Book a call with Pi
         <a href="{{ post.url | prepend: site.baseurl }}">
           {% if post.image %}
             <img
-              src="{{ site.baseurl }}{{ post.image }}"
+              src="/images/blank.png"
               srcset="
                 {{ site.baseurl }}{{ post.image }} 320w,
                 {{ site.baseurl }}{{ post.image }} 640w,
                 {{ site.baseurl }}{{ post.image }} 960w"
               sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 960px"
+              data-echo="{{ site.baseurl }}{{ post.image }}"
               alt="{{ post.title }}" class="responsive-image">
           {% endif %}
           {{ post.title }}
